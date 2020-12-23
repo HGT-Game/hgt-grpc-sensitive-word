@@ -13,12 +13,11 @@
 
 ### 目录结构
 
-<details>
-  <summary>展开</summary>
-  
   ```
+  ├─probotuf                 # proto文件生成管理
+  ├─protos                   # proto文件管理
+  ├─server                   # 服务代码
+  ├─main.go                  # 入口文件
+  ├─.gitignore               # git提交忽略配置
   ```
-
-</details>
-
 ----

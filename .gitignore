@@ -1,0 +1,12 @@
+/.idea
+.env
+*.log
+*.exe~
+*.exe
+tmp
+main
+main.exe
+config
+logs
+cpu.out
+.VSCodeCounter/

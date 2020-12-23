@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option go_package = "./protobuf/grpc/wordFilter";
+
+service WordFilter {
+    rpc Filter (ContentReq) returns (ContentRes) {}
+    rpc Validate (ContentReq) returns (ValidateRes) {}
+    rpc FindAll (ContentReq) returns (FindAllRes) {}
+    rpc Replace (ContentReq) returns (ContentRes) {}
+}
+
+// 内容请求
+message ContentReq {
+    string content = 1;
+}
+
+// 内容返回
+message ContentRes {
+    string content = 1;
+}
+
+// 验证返回
+message ValidateRes {
+    // 认证结果
+    bool res = 1;
+    // 第一个敏感词
+    string word = 2;
+}
+
+// 返回所有敏感词
+message FindAllRes {
+    repeated string word = 1;
+}
+
