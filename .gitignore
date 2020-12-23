@@ -5,6 +5,7 @@
 *.exe
 tmp
 main
+hgt-grpc-sensitive-word
 main.exe
 config
 logs
