@@ -2,15 +2,14 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"net"
-
-	"sensitive_word/protobuf/grpc/wordFilter"
-	"sensitive_word/server"
 
 	"github.com/importcjj/sensitive"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
+	"log"
+	"net"
+	"sensitive_word/protobuf/grpc/wordFilter"
+	"sensitive_word/server"
 )
 
 var WordFilter = sensitive.New()
